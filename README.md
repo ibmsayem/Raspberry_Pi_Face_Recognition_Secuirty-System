@@ -7,5 +7,8 @@ It has total three steps: **1) Data collection, 2) Model training, and 3) Model 
 
 ## Worflow of the the System:
 ### Data Collction
-The data collection process starts with taking 30 images of different people who are authorized to enter a secured locations. Agfter running the **_face_datset.py_** the program starts the camera and start taking pictures from the video and save it to the local directory. In order to capture the face from the video we used **_haarcascade_frontalface_** classifier.
+The data collection process starts with taking 30 images of different people who are authorized to enter a secured locations. Agfter running the **_face_datset.py_** the program starts the camera and start taking pictures from the video and save it to the local directory. Each images has unique Id. In order to capture the face from the video we used **_haarcascade_frontalface_** classifier.
+
+### Model Training
+After the data collection we train the images and during training **_LBPH Face Recognizer_** is used and save the train data in an **.xml** file.
 
