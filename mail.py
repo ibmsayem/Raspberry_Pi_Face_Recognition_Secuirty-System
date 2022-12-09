@@ -5,13 +5,13 @@ from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 
 # Email you want to send the update from (only works with gmail)
-fromEmail = 'ibmcsecu@gmail.com'
+fromEmail = '******@gmail.com'
 # You can generate an app password here to avoid storing your password in plain text
 # https://support.google.com/accounts/answer/185833?hl=en
-fromEmailPassword = '01705235454'
+fromEmailPassword = '*****'
 
 # Email you want to send the update to
-toEmail = 'ibmsbd93@gmail.com'
+toEmail = '*******@gmail.com'
 
 
 def sendEmail(unknown):
