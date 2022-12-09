@@ -16,7 +16,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 id = 0
 
 # names related to ids: example ==> ibmsayem: id=1,  etc
-names = ['None', 'sayem', 'naeem']
+names = ['not authorized', 'person1', 'person2']
 
 # Initialize and start realtime video capture
 cam = cv2.VideoCapture(0)
