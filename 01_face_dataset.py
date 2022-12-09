@@ -1,5 +1,5 @@
 import cv2
-import os
+# import os
 
 cam = cv2.VideoCapture(0)
 cam.set(3, 640) # set video width
@@ -11,10 +11,11 @@ face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 face_id = input('\n enter user id end press <return> ==>  ')
 
 print("\n [INFO] Initializing face capture. Look the camera and wait ...")
+
 # Initialize individual sampling face count
 count = 0
 
-while(True):
+while True:
 
     ret, img = cam.read()
     # img = cv2.flip(img, -1) # flip video image vertically
@@ -23,7 +24,7 @@ while(True):
 
     for (x,y,w,h) in faces:
 
-        cv2.rectangle(img, (x,y), (x+w,y+h), (255,0,0), 2)     
+        cv2.rectangle(img, (x,y), (x+w,y+h), (255,0,0), 2)
         count += 1
 
         # Save the captured image into the datasets folder
@@ -35,11 +36,9 @@ while(True):
     if k == 27:
         break
     elif count >= 30: # Take 30 face sample and stop video
-         break
+        break
 
 # Do a bit of cleanup
 print("\n [INFO] Exiting Program and cleanup stuff")
 cam.release()
 cv2.destroyAllWindows()
-
-
