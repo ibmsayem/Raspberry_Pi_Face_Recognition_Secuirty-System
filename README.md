@@ -15,7 +15,7 @@ After the data collection we train the images and during training **_LBPH Face R
 ### Model Deployment
 After the training process the model is deployed, where it is give access to the people in a restricted area only to the people with whom the model is trained. When an unknown people come in front of camera it takes the images of that person and send an email to the administration and as a security alert. Simple Mail Transfer Protocol (SMTP) is used to send the Email. 
 
-[Integrating Face Recognition Security System with IoT](https://ieeexplore.ieee.org/abstract/document/8613996/).
+## [Integrating Face Recognition Security System with IoT](https://ieeexplore.ieee.org/abstract/document/8613996/).
 
 Biblatex entry:
 
